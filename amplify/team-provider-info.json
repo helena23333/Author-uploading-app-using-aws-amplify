@@ -25,7 +25,7 @@
       "function": {
         "testappamplifyPostConfirmation": {
           "deploymentBucketName": "amplify-testappamplify-staging-200421-deployment",
-          "s3Key": "amplify-builds/testappamplifyPostConfirmation-384547325a5a7a785161-build.zip"
+          "s3Key": "amplify-builds/testappamplifyPostConfirmation-2f5671736a4e51494948-build.zip"
         }
       }
     }
