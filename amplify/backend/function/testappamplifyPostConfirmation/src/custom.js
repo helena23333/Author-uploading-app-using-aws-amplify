@@ -28,6 +28,4 @@ exports.handler = async (event, context, callback) => {
   } catch (err) {
     console.error(err)
   }
-
-  callback(null, event)
 }
