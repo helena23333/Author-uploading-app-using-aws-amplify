@@ -105,13 +105,16 @@ document.getElementById('create-post').addEventListener('submit', async e => {
     const newPost = await DataStore.save(new Post({
       description: document.getElementById('description').value,
       image: file.name
-    }))
+    })).then(() => {
+      alert("Post success!")
+      window.location.reload()
+    })
 
     console.log(newPost)
     window.location.reload()
     
   } catch (err) {
-    console.log(err)
+    alert("Post failed with error: " + error)
   }
 })
 
