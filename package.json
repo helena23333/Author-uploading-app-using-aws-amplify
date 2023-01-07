@@ -35,6 +35,7 @@
     },
     "dependencies": {
         "aws-amplify": "^4.3.45",
-        "typescript": "^4.2.4"
+        "typescript": "^4.2.4",
+        "@aws-amplify/datastore": "^3.14.6"
     }
 }
