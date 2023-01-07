@@ -2,10 +2,10 @@
     "name": "build-a-vanillajs-application-using-aws-amplify-2883139",
     "version": "1.0.0",
     "description": "This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].",
-    "main": "index.js",
+    "source": "index.js",
     "scripts": {
         "start": "npx parcel index.html confirm.html sign-in.html sign-up.html",
-        "build": "build index.html confirm.html sign-in.html sign-up.html",
+        "build": "npx parcel build index.html confirm.html sign-in.html sign-up.html",
         "amplify-modelgen": "node amplify/scripts/amplify-modelgen.js",
         "amplify-push": "node amplify/scripts/amplify-push.js"
     },
@@ -34,6 +34,7 @@
         "string_decoder": "^1.3.0"
     },
     "dependencies": {
+        "@aws-amplify/datastore": "^4.0.8",
         "aws-amplify": "^4.0.2",
         "typescript": "^4.2.4"
     }
